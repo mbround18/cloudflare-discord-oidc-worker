@@ -1,0 +1,13 @@
+name: Rusty
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
+jobs:
+  rust:
+    uses: mbround18/gh-reusable/.github/workflows/rust-build-n-test.yml@v0.0.6
+

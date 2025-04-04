@@ -1,0 +1,16 @@
+name = "discord-oidc"
+compatibility_date = "2025-04-04"
+main = "build/worker/shim.mjs"
+
+[build]
+command = "cargo install -q worker-build && worker-build --release"
+
+
+[vars]
+DISCORD_CLIENT_ID = ""
+DISCORD_CLIENT_SECRET = ""
+DISCORD_REDIRECT_URL = ""
+
+[[kv_namespaces]]
+binding = "KEYS_STORE"
+id = ""

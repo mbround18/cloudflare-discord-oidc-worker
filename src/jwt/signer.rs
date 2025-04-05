@@ -22,7 +22,7 @@ pub async fn load_or_generate_private_key(env: &Env) -> Result<RsaPrivateKey, Ap
     } else {
         let mut rng = rand::rngs::OsRng;
         let key =
-            RsaPrivateKey::new(&mut rng, 2048).map_err(|e| AppError::Keygen(e.to_string()))?;
+            RsaPrivateKey::new(&mut rng, 8192).map_err(|e| AppError::Keygen(e.to_string()))?;
         let pem = key
             .to_pkcs1_pem(LineEnding::CRLF)
             .map_err(|e| AppError::Keygen(e.to_string()))?

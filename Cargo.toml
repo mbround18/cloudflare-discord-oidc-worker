@@ -14,7 +14,7 @@ serde_urlencoded = "0.7"
 console_error_panic_hook = "0.1"
 anyhow = "1.0"
 jsonwebtoken = "9.1"
-rand = { version = "0.8", features = ["default"] }
+rand = { version = "0.10", features = ["default"] }
 thiserror = "2.0.12"
 log = "0.4.27"
 base64-url = "3.0.0"

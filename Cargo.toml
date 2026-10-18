@@ -17,7 +17,7 @@ jsonwebtoken = "11.0"
 rand = { version = "0.8", features = ["default"] }
 thiserror = "2.0.12"
 log = "0.4.27"
-base64-url = "3.0.0"
+base64-url = "4.0.0"
 js-sys = "0"
 sha2 = "0.11.0-pre.5"
 hex = "0.4.3"
